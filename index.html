@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
+
 <body>
-    <div id = "container">
-        <div id = "output"> 0 </div>
-        <input type = "button" value = "0" onclick="set('0')">
-        <input type = "button" value = "1" onclick="set('1')">
-        <input type = "button" value = "2" onclick="set('2')">
-        <input type = "button" value = "3" onclick="set('3')">
-        <input type = "button" value = "4" onclick="set('4')">
-        <input type = "button" value = "5" onclick="set('5')">
-        <input type = "button" value = "6" onclick="set('6')">
-        <input type = "button" value = "7" onclick="set('7')">
-        <input type = "button" value = "8" onclick="set('8')">
-        <input type = "button" value = "9" onclick="set('9')">
-        <input type = "button" value = "x" onclick="operate('multiply')">
-        <input type = "button" value = "/" onclick="operate('divide')">
-        <input type = "button" value = "+" onclick="operate('add')">
-        <input type = "button" value = "-" onclick="operate('subtract')">
-        <input type = "button" value = "=" onclick= "equalButton()">
-        <input type = "button" value = "clear" onclick="clearButton()">
+
+    <div class="container">
+        <div id="edge">
+            <h1 class="head">Your calculator</h1>
+            <div class="result">
+                <div id="output" class="testpanel"> 0 </div>
+            </div>
+            <div class="keypad-number">
+                <div class="row">
+                    <input type="button" value="0" class="but-style" onclick="set('0')">
+                    <input type="button" value="1" class="but-style" onclick="set('1')">
+                    <input type="button" value="2" class="but-style" onclick="set('2')">
+                </div>
+                <div class="row">
+                    <input type="button" value="3" class="but-style" onclick="set('3')">
+                    <input type="button" value="4" class="but-style" onclick="set('4')">
+                    <input type="button" value="5" class="but-style" onclick="set('5')">
+                </div>
+                <div class="row">
+                    <input type="button" value="6" class="but-style" onclick="set('6')">
+                    <input type="button" value="7" class="but-style" onclick="set('7')">
+                    <input type="button" value="8" class="but-style" onclick="set('8')">
+                </div>
+                <div class="row">
+                    <input type="button" value="=" class="but-equals" onclick="equalButton()">
+                    <input type="button" value="9" class="but-style" onclick="set('9')">
+                </div>
+
+            </div>
+            <div class="keypad-ops">
+                <input type="button" value="x" class="but-ops" onclick="operate('multiply')">
+                <input type="button" value="/" class="but-ops" onclick="operate('divide')">
+                <input type="button" value="+" class="but-ops" onclick="operate('add')">
+                <input type="button" value="-" class="but-ops" onclick="operate('subtract')">
+
+            </div>
+            <div class="button-area">
+                <input type="button" value="clear" class="btn" onclick="clearButton()">
+            </div>
+        </div>
     </div>
-    <script src = "calc.js"></script>
+    <script src="calc.js"></script>
 </body>
+
 </html>

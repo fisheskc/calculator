@@ -1,0 +1,74 @@
+* {
+  padding: 0px;
+}
+
+#edge {
+  width: 40vh;
+  height: 60vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.25rem outset #9e7a58;
+  background: #c9a786;
+}
+.head {
+  color: #fff;
+}
+
+.keypad-number {
+  background: #f9e5bd;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.but-style {
+  width: 6.5em;
+  margin: 0.15em;
+}
+.but-equals {
+  width: 13.25em;
+  margin: 0.15em;
+}
+
+.keypad-ops {
+  background: #f9e5bd;
+  border-radius: 5px;
+  padding: 8px;
+  width: 14em;
+}
+
+.but-ops {
+  width: 4.5em;
+  margin: 0.15em;
+}
+
+.btn {
+  background: #f9e5bd;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #000;
+  font-size: 17px;
+  padding: 8px 100px 8px 100px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.result {
+  background: #897059;
+  width: 14em;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: right;
+  color: #fff;
+}
+
+.container {
+  margin: 30px auto;
+  width: 600px;
+}
